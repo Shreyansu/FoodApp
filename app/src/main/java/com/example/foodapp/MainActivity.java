@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity
+{
     private Button signUp,signI;
 
     @Override
@@ -19,9 +19,14 @@ public class MainActivity extends AppCompatActivity {
         signUp=(Button) findViewById(R.id.btnSignUp);
         signI=(Button) findViewById(R.id.btnSignActive);
 
+
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(MainActivity.this,SignUp.class);
+                startActivity(intent);
+
 
             }
         });
@@ -30,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent sign = new Intent(MainActivity.this,SignIn.class);
+                Intent sign = new Intent(MainActivity.this,Login.class);
                 startActivity(sign);
             }
         });

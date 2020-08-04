@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPhone"
+            android:hint="PhoneNumber"
+            android:text="0988123344"
+            android:textSize="30sp"
+            android:textColor="#FBF9FD"
+            android:textColorHint="#EDF1F1"
+            app:met_floatingLabel="highlight"
+            android:inputType="phone"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_maxCharacters="11"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/colorPrimaryDark"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtName"
+            app:met_floatingLabel="highlight"
+            android:hint="Name"
+            android:text="Tom"
+            android:textSize="30sp"
+            android:textColor="#FBF9FD"
+            android:textColorHint="#EDF1F1"
+            android:inputType="textPersonName"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/colorPrimaryDark"
+            />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPassword"
+            android:hint="Password"
+            android:text="1234"
+            android:textSize="30sp"
+            android:textColor="#FBF9FD"
+            android:textColorHint="#EDF1F1"
+            android:inputType="textPassword"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/colorPrimaryDark"
+            />
+    </LinearLayout>
+
+
+    <info.hoang8f.widget.FButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Sign Up"
+        android:id="@+id/btnSignUp"
+        android:textColor="#F6F5F8"
+        />
+
+</RelativeLayout>

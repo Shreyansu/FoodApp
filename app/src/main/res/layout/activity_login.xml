@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back"
-    tools:context=".SignIn">
+    tools:context=".Login">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,18 +26,27 @@
             android:textColor="#FBF9FD"
             android:textColorHint="#EDF1F1"
             android:inputType="phone"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_maxCharacters="11"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/colorPrimaryDark"
             />
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/edtPassword"
-            android:hint="PhoneNumber"
+            android:hint="Password"
             android:text="1234"
             android:textSize="30sp"
             android:textColor="#FBF9FD"
             android:textColorHint="#EDF1F1"
             android:inputType="textPassword"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_singleLineEllipsis="true"
+            app:met_primaryColor="@color/colorPrimaryDark"
             />
     </LinearLayout>
 
@@ -49,18 +58,9 @@
         android:layout_margin="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        app:cornerRadius="4dp"
-        app:shadowHeight="8dp"
         android:text="Sign In"
         android:id="@+id/btnSignIn"
         android:textColor="#F6F5F8"
-        app:buttonColor="#CFE30D"
         />
-
-
-
-
-
-
 
 </RelativeLayout>
